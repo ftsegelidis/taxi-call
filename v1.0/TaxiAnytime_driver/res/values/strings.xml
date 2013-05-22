@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Εφαρμογή οδηγού</string>
+    <string name="gotoRegister">Δεν έχω λογαριασμό στο taxi anytime, γρήγορα για εγγραφή!</string>
+	<string name="isAvailable">Διαθεσιμότητα οδηγού</string>
+	<string name="pushNotification">Ειδοποιήσεις push</string>
+	<string name="CkeckboxAccept">Απ.αιτημάτων</string>
+	<string name="ReachCustomer">Έφτασα</string>
+	<string name="editImageUrl">Url Εικόνας</string>
+	
+	    <!-- Call Activity  -->
+    <string name="call">Επικοινωνία</string>
+    <string name="callactivity">SOS Κλήσε σε πελάτη</string>
+    
+    
+    
+     <string name="driver_splash_screen">Οθόνη εκκίνησης </string>
+     <string name="driver_edit_info">Αλλαγή στοιχείων </string>
+     <string name="about_app">Σχετικά με</string>
+    
+    
+     <!-- Register -->
+     
+     <string name="driver_register">Εγγραφή χρήστη </string>
+     <string name="name">Όνομα: </string>
+     <string name="lastname">Επίθετο: </string>
+     <string name="cellphone">Κινητό: </string>
+     <string name="birthdate">Ημερομηνία Γέννησης: </string>
+     <string name="town">Πόλη: </string>
+     <string name="mail">E-mail: </string>
+     <string name="plateNumber">Αρ.Πινακίδας: </string>
+     <string name="username">Όνομα χρήστη: </string>
+     <string name="password">Κωδικός:  </string>
+     <string name="reppassword">Επανάληψη κωδικού: </string>
+     <string name="dogegister">Εγγραφή </string>
+     <string name="clear">clear </string>
+     
+     <!-- Login -->
+     <string name="login">Είσοδος χρήστη </string>
+   
+       <!-- Report  (για το spinner)-->
+     <string name="report">Αναφορά</string>
+  	<string-array name="reportReasons">
+        <item>Δεν εμφανίστηκε στο ραντεβού</item>
+        <item>Ήταν πολύ αγενής</item>
+        <item>Εκτός απο μένα, κάλεσε πολλούς άλλους</item>
+        <item>Δεν ήταν στην θέση που δήλωσε</item>
+        <item>Αλλο,αναφέρετε παρακάτω</item>
+    </string-array>
+    <string name="report_driver"> Αναφορά πελάτη</string>
+    <string name="report_reason"> Δώστε τον λόγο για τον οποίο κάνετε την αναφορά</string>
+    <string name="report_back"> Επιστροφή</string>
+    <string name="report_submit"> Υποβολή</string>
+    <string name="report_comment"> Σχόλιο</string>
+    
+    
+     <!-- DriverEndRideActivity-->
+     
+     <string name="driver_endRide">Τερματισμός διαδρομής </string>
+    
+    
+    
+	
+	
+</resources>

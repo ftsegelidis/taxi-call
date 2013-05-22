@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="app.taxiAnytimeDriver" android:versionName="1.0" android:versionCode="1">
+          
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+   
+       <uses-sdk
+        android:minSdkVersion="8"
+        android:maxSdkVersion="14" />
+    
+  <application android:allowBackup="true"
+    android:icon="@drawable/logo" android:debuggable="true" android:label="TaxiAnytime Driver">
+    <uses-library android:name="com.google.android.maps"/>
+    <!-- 
+
+     -->
+    
+    <activity 
+     
+     android:name="app.taxiAnytimeDriver.Common.DriverSplashScreen" android:label="@string/app_name" >
+    
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    
+    
+    
+     <activity  android:name=".Driver.DriverActivity"  android:label="@string/app_name"> </activity>
+    
+    
+    <activity android:name=".Common.ReportActivity" android:label="@string/report"> </activity>
+    
+    <activity android:name=".Driver.DriverEndRideActivity" android:label="@string/driver_endRide"> </activity>
+    <activity android:name=".Common.RegisterDriverActivity" android:label="@string/driver_register"> </activity>
+    <activity android:name=".Common.LoginActivity" android:label="@string/login"></activity>
+    <activity android:name=".Common.EditProfileActivity" android:label="@string/driver_edit_info"></activity>
+     <activity  android:name=".Common.About" android:label="@string/about_app" >  </activity>
+    
+    <service android:name=".pushService.PushService" android:label="@string/pushNotification"></service>
+ 
+    
+    </application>
+
+  
+</manifest>

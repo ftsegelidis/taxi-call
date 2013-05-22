@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:tools="http://schemas.android.com/tools"
+     android:scrollbars="vertical" 
+     android:background="#f0ffff"
+     android:layout_height="fill_parent" 
+     android:layout_width="fill_parent">
+
+
+
+
+
+<TableLayout
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+tools:context=".MainActivity" >
+    
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+  </TableRow>
+  
+  <TableRow >
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="20" />
+  </TableRow>  
+  
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblSirName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastname"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+  </TableRow>
+  
+  <TableRow >
+    <EditText
+        android:id="@+id/txtSirName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:maxLength="20" >
+    </EditText>
+  </TableRow>   
+  
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblCellphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cellphone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtCellphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"  >
+    </EditText>   
+  </TableRow>
+
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthdate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" 
+        android:textStyle="bold"/>
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+  </TableRow>
+  
+   <TableRow >
+
+    <TextView
+        android:id="@+id/lblTowne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/town"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtTown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="20"  >
+    </EditText>   
+  </TableRow>
+
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="20" />
+  </TableRow>
+
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" 
+        android:textStyle="bold"/>
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+  </TableRow>
+
+  <TableRow >
+
+    <TextView
+        android:id="@+id/lblRepeatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reppassword"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" 
+        android:textStyle="bold"/>
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtRepatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+  </TableRow>
+  
+   <TableRow >
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+		android:textStyle="bold"/>
+
+  </TableRow>
+
+  <TableRow >
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>   
+  </TableRow>
+
+  <TableRow >
+    <Button
+        
+        android:id="@+id/btnRegister"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_register" 
+        android:onClick="onClkRegister"
+        android:layout_weight="1"/>
+
+    <Button
+        
+        android:id="@+id/btnCrealFields"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:onClick="onClkClearFields" 
+        android:layout_weight="1"/>
+  </TableRow>
+
+   </TableLayout>
+   
+
+</ScrollView>
