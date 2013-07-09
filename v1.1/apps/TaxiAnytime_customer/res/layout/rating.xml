@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/lblRateMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/rate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblRateMe"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ratingBar"
+        android:text="@string/users_rate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_above="@+id/imageButtonSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Σχόλιο..."
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/post_a_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/comments"
+            android:layout_alignParentLeft="true"
+            android:text="@string/post_a_comment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtRatingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@+id/lblResult"
+            android:layout_alignBottom="@+id/lblResult"
+            android:layout_toRightOf="@+id/lblResult"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/ratingBar"
+            android:onClick="onClkSubmit"
+            android:src="@drawable/button_submit_comments" />
+
+</RelativeLayout>
