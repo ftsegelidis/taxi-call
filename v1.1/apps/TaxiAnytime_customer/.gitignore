@@ -1,0 +1,8 @@
+.settings
+bin/
+gen/
+.classpath
+.project
+lint
+project.properties
+.idea
